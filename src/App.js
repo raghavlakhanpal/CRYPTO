@@ -9,7 +9,7 @@ class App extends React.Component {
   componentDidMount() {
     const fetchShoesList = async () => {
       const response = await shoesApi.get("/search/photos", {
-        params: { query: "shoes" },
+        params: { query: "shoes", per_page: 30 },
       });
       this.setState({ shoes: response.data.results });
     };
