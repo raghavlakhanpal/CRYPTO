@@ -8,15 +8,21 @@
   align-items: center;
   border: 10px solid;
 }
+/* ------------------header-style----------------------- */
+
 .header {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 45%;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  text-align: center;
 }
 .header h1 {
   margin-top: 15px;
-  text-align: center;
 }
 .header img {
   width: 35px;
@@ -36,7 +42,6 @@
 .signup-bar,
 .declaration {
   margin-top: 13px;
-  width: 45%;
 }
 .trademark {
   font-size: 13px;
@@ -55,15 +60,21 @@
 
 .signup-bar input {
   border: 2px solid black;
-  color: grey;
+  color: black;
   padding: 5px;
   width: 50%;
   caret-color: black;
 }
+
+.signup-bar input::placeholder {
+  color: gray;
+}
+
 .signup-bar button {
   background-color: black;
   color: white;
   font-weight: bold;
+  border: none;
 }
 
 .declaration {
@@ -72,7 +83,8 @@
   font-weight: lighter;
   font-size: 0.6em;
 }
-/* -------------------------------------------------- */
+/* ----------------------shoe-list-style---------------------------- */
+
 .shoe-list {
   display: flex;
   flex-wrap: wrap;
@@ -82,12 +94,13 @@
 .shoe-container {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  flex-grow: 1;
   height: 350px;
   width: 240px;
-  background-color: rgba(200, 199, 201, 0.442);
-  margin: 7px 7px;
+  margin: 7px;
   border-radius: 1px;
-  justify-content: space-around;
+  background-color: rgba(200, 199, 201, 0.442);
 }
 .shoe-header {
   display: flex;
@@ -108,8 +121,8 @@
   object-position: center;
 }
 .shoe-content {
-height: 200px;
-overflow: hidden;
+  height: 200px;
+  overflow: hidden;
 }
 .shoe-info {
   display: flex;
