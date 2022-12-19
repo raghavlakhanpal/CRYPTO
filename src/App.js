@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
-//import components
+//sub-components
 import Header from "./Header";
 import ShoeList from "./ShoeList";
-//import apis
+import Spinner from "./Spinner";
+//api
 import shoesApi from "./Api";
 
 //-------- Display Functionality----------------------------------//
@@ -19,6 +20,23 @@ const Layout = ({ children }) => {
 const App = () => {
   //state
   const [shoes, setShoes] = useState([]);
+  //function to fetch data from api response
+  const transformApiDataToState = (apiData) => {
+    return apiData.map((data) => {
+      return {
+        id: data.id,
+        shoename:
+          data.user.location === null ? "Anonymous" : data.user.location,
+        shoestyle: data.user.name === null ? "Adidas" : data.user.name,
+        color: data.color,
+        url: data.urls.regular,
+        description:
+          data.description === null ? "No Description" : data.description,
+        cost: data.likes,
+        date: data.updated_at,
+      };
+    });
+  };
 
   //lifecycle on start only
   useEffect(() => {
@@ -27,7 +45,8 @@ const App = () => {
         params: { query: "shoes", per_page: 30 },
       });
 
-      setShoes(response.data.results);
+      const transformedData = transformApiDataToState(response.data.results);
+      setShoes(transformedData);
     };
     fetchShoesList();
   }, []);
@@ -35,11 +54,7 @@ const App = () => {
   //Conditional render
   return (
     <Layout>
-      {shoes.length === 0 ? (
-        <div className="loader">Loading...</div>
-      ) : (
-        <ShoeList shoes={shoes} />
-      )}
+      {shoes.length === 0 ? <Spinner /> : <ShoeList shoes={shoes} />}
     </Layout>
   );
 };

@@ -10,23 +10,24 @@ const ShoeCard = (props) => {
   };
 
   //profiling the data from props
-  const { description, urls, id, color, user, likes, updated_at } = props.shoe;
+  const { description, url, id, color, shoename, shoestyle, cost, date } =
+    props.shoe;
 
   return (
     <div className="shoe-container" style={{ backgroundColor: color }}>
       <div className="shoe-header">
         <span className="shoe-id">{`#${id}`}</span>
         <span className="shoe-manufacture-date">
-          {createDateTimeFormat(updated_at)}
+          {createDateTimeFormat(date)}
         </span>
       </div>
       <div className="shoe-content">
-        <img alt={description} src={urls.regular} />
+        <img alt={description} src={url} />
       </div>
       <div className="shoe-info">
-        <span className="shoe-info-name">{user.location}</span>
-        <span className="shoe-info-style">{user.name}</span>
-        <span className="shoe-info-price">{`${likes / 100} ETH`}</span>
+        <span className="shoe-info-name">{shoename}</span>
+        <span className="shoe-info-style">{shoestyle}</span>
+        <span className="shoe-info-price">{`${cost / 100} ETH`}</span>
       </div>
     </div>
   );

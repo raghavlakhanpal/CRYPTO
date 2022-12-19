@@ -1,16 +1,28 @@
 * {
-  box-sizing: border-box;
   caret-color: transparent;
+  box-sizing: border-box;
 }
 
 .App {
-  justify-content: center;
-  align-items: center;
   border: 10px solid;
 }
+/*-------------------- spinner------------------------ */
+.app-spinner{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px;
+}
+.app-spinner span{
+  font-size: large;
+  font-weight: 600;
+}
+
+
 /* ------------------header-style----------------------- */
 
 .header {
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,7 +30,6 @@
   width: 45%;
   max-width: 500px;
   min-width: 300px;
-  margin: 0 auto;
   text-align: center;
 }
 .header h1 {
@@ -59,10 +70,9 @@
 }
 
 .signup-bar input {
+  padding: 5px;
   border: 2px solid black;
   color: black;
-  padding: 5px;
-  width: 50%;
   caret-color: black;
 }
 
@@ -90,6 +100,7 @@
   flex-wrap: wrap;
   justify-content: flex-start;
   margin-top: 40px;
+
 }
 .shoe-container {
   display: flex;
