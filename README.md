@@ -1,13 +1,14 @@
  <!--
 Task for Monday:
- T̶O̶D̶O̶:̶ ̶c̶o̶n̶v̶e̶r̶t̶ ̶c̶o̶m̶p̶l̶e̶t̶e̶ ̶a̶p̶p̶ ̶i̶n̶t̶o̶ ̶h̶o̶o̶k̶s̶ ̶b̶a̶s̶e̶d̶
- T̶O̶D̶O̶:̶ ̶c̶r̶e̶a̶t̶e̶ ̶a̶ ̶t̶r̶a̶n̶s̶f̶o̶r̶m̶ ̶f̶u̶n̶c̶t̶i̶o̶n̶ ̶w̶h̶i̶c̶h̶ ̶t̶a̶k̶e̶s̶ ̶o̶n̶l̶y̶ ̶t̶h̶e̶ ̶n̶e̶c̶e̶s̶s̶a̶r̶y̶ ̶v̶a̶l̶u̶e̶s̶ ̶a̶n̶d̶ ̶n̶a̶m̶e̶ ̶t̶h̶e̶ ̶v̶a̶l̶u̶e̶s̶ ̶a̶s̶ ̶y̶o̶u̶ ̶n̶e̶e̶d̶ ̶t̶h̶e̶m̶,̶ ̶i̶r̶r̶e̶s̶p̶e̶c̶t̶i̶v̶e̶ ̶o̶f̶ ̶n̶a̶m̶e̶ ̶f̶r̶o̶m̶ ̶t̶h̶e̶ ̶n̶a̶m̶e̶ ̶t̶h̶e̶ ̶s̶e̶r̶v̶e̶r̶.̶ ̶A̶L̶s̶o̶,̶ ̶h̶a̶v̶e̶ ̶d̶e̶f̶a̶u̶l̶t̶ ̶v̶a̶l̶u̶e̶s̶ ̶w̶h̶e̶r̶e̶ ̶s̶o̶m̶e̶ ̶r̶e̶q̶u̶i̶r̶e̶d̶ ̶v̶a̶l̶u̶e̶ ̶i̶s̶ ̶e̶m̶p̶t̶y̶ ̶o̶r̶ ̶u̶n̶d̶e̶f̶i̶n̶e̶d̶ ̶o̶r̶ ̶n̶u̶l̶l̶
- ̶T̶O̶D̶O̶:̶ ̶I̶n̶s̶t̶e̶a̶d̶ ̶o̶f̶ ̶l̶o̶a̶d̶i̶n̶g̶ ̶t̶e̶x̶t̶,̶ ̶h̶a̶v̶e̶ ̶a̶ ̶b̶l̶a̶c̶k̶ ̶c̶o̶l̶o̶r̶ ̶l̶o̶a̶d̶i̶n̶g̶ ̶s̶p̶i̶n̶n̶e̶r̶,̶ ̶T̶i̶p̶:̶ ̶S̶e̶p̶a̶r̶a̶t̶e̶ ̶S̶p̶i̶n̶n̶e̶r̶ ̶C̶o̶m̶p̶o̶n̶e̶n̶t̶
+ T̶O̶D̶O̶:̶ c̶o̶n̶v̶e̶r̶t̶ c̶o̶m̶p̶l̶e̶t̶e̶ a̶p̶p̶ i̶n̶t̶o̶ h̶o̶o̶k̶s̶ b̶a̶s̶e̶d̶
+ T̶O̶D̶O̶:̶ c̶r̶e̶a̶t̶e̶ a̶ t̶r̶a̶n̶s̶f̶o̶r̶m̶ f̶u̶n̶c̶t̶i̶o̶n̶ w̶h̶i̶c̶h̶ t̶a̶k̶e̶s̶ o̶n̶l̶y̶ t̶h̶e̶ n̶e̶c̶e̶s̶s̶a̶r̶y̶ v̶a̶l̶u̶e̶s̶ a̶n̶d̶ n̶a̶m̶e̶ t̶h̶e̶ v̶a̶l̶u̶e̶s̶ a̶s̶ y̶o̶u̶ n̶e̶e̶d̶ t̶h̶e̶m̶,̶ i̶r̶r̶e̶s̶p̶e̶c̶t̶i̶v̶e̶ o̶f̶ n̶a̶m̶e̶ f̶r̶o̶m̶ t̶h̶e̶ n̶a̶m̶e̶ t̶h̶e̶ s̶e̶r̶v̶e̶r̶.̶ A̶L̶s̶o̶,̶ h̶a̶v̶e̶ d̶e̶f̶a̶u̶l̶t̶ v̶a̶l̶u̶e̶s̶ w̶h̶e̶r̶e̶ s̶o̶m̶e̶ r̶e̶q̶u̶i̶r̶e̶d̶ v̶a̶l̶u̶e̶ i̶s̶ e̶m̶p̶t̶y̶ o̶r̶ u̶n̶d̶e̶f̶i̶n̶e̶d̶ o̶r̶ n̶u̶l̶l̶
+ T̶O̶D̶O̶:̶ I̶n̶s̶t̶e̶a̶d̶ o̶f̶ l̶o̶a̶d̶i̶n̶g̶ t̶e̶x̶t̶,̶ h̶a̶v̶e̶ a̶ b̶l̶a̶c̶k̶ c̶o̶l̶o̶r̶ l̶o̶a̶d̶i̶n̶g̶ s̶p̶i̶n̶n̶e̶r̶,̶ T̶i̶p̶:̶ S̶e̶p̶a̶r̶a̶t̶e̶ S̶p̶i̶n̶n̶e̶r̶ C̶o̶m̶p̶o̶n̶e̶n̶t̶
 
-Task for Tuesday:
- TODO: 1. Implement Router and Creating SingleProductPage Component, Possible challenge: passing props into routes might be problematic, so try to find something on google for this
- / -> <HomePage apiData={} />
- /products/${productId} -> <SingleProductPage apiData={}/>
+Task for Tuesday: 
+ T̶O̶D̶O̶:̶ 1̶.̶ I̶m̶p̶l̶e̶m̶e̶n̶t̶ R̶o̶u̶t̶e̶r̶ a̶n̶d̶ C̶r̶e̶a̶t̶i̶n̶g̶ S̶i̶n̶g̶l̶e̶P̶r̶o̶d̶u̶c̶t̶P̶a̶g̶e̶ C̶o̶m̶p̶o̶n̶e̶n̶t̶,̶ P̶o̶s̶s̶i̶b̶l̶e̶ c̶h̶a̶l̶l̶e̶n̶g̶e̶:̶ p̶a̶s̶s̶i̶n̶g̶ p̶r̶o̶p̶s̶ i̶n̶t̶o̶ r̶o̶u̶t̶e̶s̶ m̶i̶g̶h̶t̶ b̶e̶ p̶r̶o̶b̶l̶e̶m̶a̶t̶i̶c̶,̶ s̶o̶ t̶r̶y̶ t̶o̶ f̶i̶n̶d̶ s̶o̶m̶e̶t̶h̶i̶n̶g̶ o̶n̶ g̶o̶o̶g̶l̶e̶ f̶o̶r̶ t̶h̶i̶s̶.̶
+ /̶ -̶>̶ <̶H̶o̶m̶e̶P̶a̶g̶e̶ a̶p̶i̶D̶a̶t̶a̶=̶{̶}̶ /̶>̶
+ /̶p̶r̶o̶d̶u̶c̶t̶s̶/̶$̶{̶p̶r̶o̶d̶u̶c̶t̶I̶d̶}̶ -̶>̶ <̶S̶i̶n̶g̶l̶e̶P̶r̶o̶d̶u̶c̶t̶P̶a̶g̶e̶ a̶p̶i̶D̶a̶t̶a̶=̶{̶}̶/̶>̶
+
  TODO: 2. Click a shoe card from homepage should redirect you to /products/${productId}
  TODO: 3. Find data for the current productId in the URL and update data state
 

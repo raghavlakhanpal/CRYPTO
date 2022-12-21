@@ -3,21 +3,21 @@
   box-sizing: border-box;
 }
 
-.App {
+.homepage {
   border: 10px solid;
+  min-height: 98vh;
 }
 /*-------------------- spinner------------------------ */
-.app-spinner{
+.app-spinner {
   display: flex;
   align-items: center;
   flex-direction: column;
   margin: 20px;
 }
-.app-spinner span{
+.app-spinner span {
   font-size: large;
   font-weight: 600;
 }
-
 
 /* ------------------header-style----------------------- */
 
@@ -100,7 +100,6 @@
   flex-wrap: wrap;
   justify-content: flex-start;
   margin-top: 40px;
-
 }
 .shoe-container {
   display: flex;

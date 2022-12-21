@@ -1,8 +1,12 @@
 import React from "react";
-
 import dayjs from "dayjs";
 
+import { useNavigate } from "react-router-dom";
+
+//component
 const ShoeCard = (props) => {
+  const navigate = useNavigate();
+
   //change DAte Time Format
   const createDateTimeFormat = (dateTime) => {
     const dt = dayjs(dateTime);
@@ -14,7 +18,13 @@ const ShoeCard = (props) => {
     props.shoe;
 
   return (
-    <div className="shoe-container" style={{ backgroundColor: color }}>
+    <div
+      onClick={() => {
+        navigate(`/products`);
+      }}
+      className="shoe-container"
+      style={{ backgroundColor: color }}
+    >
       <div className="shoe-header">
         <span className="shoe-id">{`#${id}`}</span>
         <span className="shoe-manufacture-date">
