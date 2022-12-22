@@ -4,18 +4,16 @@ import { Link, useParams } from "react-router-dom";
 import Spinner from "../../Spinner";
 import TagList from "./TagList";
 
-// const getTags = ({ tagsData }) => {
-//   return tagsData.map((tagData) => {
-//     <Tag tags={tagData} />;
-//   });
-// };
-
-const ProductPage = ({ getProductById }) => {
+const ProductPage = ({ getProductById, fetchData }) => {
   const [data, setData] = useState([]);
   // console.log(data.tags);
   //url variable passed to
   const { productId } = useParams();
 
+  // ///if person directly opens child component
+  // useEffect(() => {
+  //   fetchData();
+  // }, []);
   useEffect(() => {
     var productData = getProductById(productId);
     setData(productData);
@@ -27,7 +25,7 @@ const ProductPage = ({ getProductById }) => {
         <Link to="/" className="product-btn">
           Go back
         </Link>
-        <a href={data.unsplashLink} className="product-btn">
+        <a href={data.unsplashLink} target="_blank" className="product-btn">
           View image on Unsplash
         </a>
       </div>
@@ -68,10 +66,20 @@ const ProductPage = ({ getProductById }) => {
             dolor sit amet, consectetur adipisicing elit. Autem eos nobis eius
             obcaecati eaque tempore aspernatur laudantium dolor fuga libero.
             Laborum provident iure temporibus eaque perferendis maxime id animi
-            aliquam.
+            aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Autem eos nobis eius obcaecati eaque tempore aspernatur laudantium
+            dolor fuga libero. Laborum provident iure temporibus eaque
+            perferendis maxime id animi aliquam. Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Autem eos nobis eius obcaecati eaque
+            tempore aspernatur laudantium dolor fuga libero. Laborum provident
+            iure temporibus eaque perferendis maxime id animi aliquam. Lorem
+            ipsum dolor sit amet, consectetur adipisicing elit. Autem eos nobis
+            eius obcaecati eaque tempore aspernatur laudantium dolor fuga
+            libero. Laborum provident iure temporibus eaque perferendis maxime
+            id animi aliquam.
           </p>
           <div className="btn-div">
-            <button class="buy-btn">Add to Cart</button>
+            <button className="buy-btn">Add to Cart</button>
           </div>
         </div>
       </div>

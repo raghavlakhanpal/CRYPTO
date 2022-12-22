@@ -11,6 +11,7 @@
   border: 10px solid;
   min-height: 98vh;
 }
+
 /*-------------------- spinner------------------------ */
 .app-spinner {
   display: flex;
@@ -18,6 +19,7 @@
   flex-direction: column;
   margin: 20px;
 }
+
 .app-spinner span {
   font-size: large;
   font-weight: 600;
@@ -36,32 +38,39 @@
   min-width: 300px;
   text-align: center;
 }
+
 .header h1 {
   margin-top: 15px;
 }
+
 .header img {
   width: 35px;
 }
+
 .logo {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .logo img {
   margin-left: 10px;
   background-color: #ff0055;
   border-radius: 50%;
 }
+
 .header h1,
 .trademark,
 .signup-bar,
 .declaration {
   margin-top: 13px;
 }
+
 .trademark {
   font-size: 13px;
   text-align: center;
 }
+
 .trademark sup {
   font-size: 7px;
   font-weight: bold;
@@ -98,6 +107,7 @@
   font-weight: lighter;
   font-size: 0.6em;
 }
+
 /* ----------------------shoe-list-style---------------------------- */
 
 .shoe-list {
@@ -106,6 +116,7 @@
   justify-content: flex-start;
   margin-top: 40px;
 }
+
 .shoe-container {
   display: flex;
   flex-direction: column;
@@ -117,6 +128,7 @@
   border-radius: 1px;
   background-color: rgba(200, 199, 201, 0.442);
 }
+
 .shoe-header {
   display: flex;
   justify-content: space-between;
@@ -124,6 +136,7 @@
   font-size: 10px;
   font-weight: 100;
 }
+
 .shoe-id,
 .shoe-manufacture-date {
   margin: 15px 10px;
@@ -135,10 +148,12 @@
   object-fit: cover;
   object-position: center;
 }
+
 .shoe-content {
   height: 200px;
   overflow: hidden;
 }
+
 .shoe-info {
   display: flex;
   flex-direction: column;
@@ -146,15 +161,18 @@
   padding-left: 5px;
   align-content: space-around;
 }
+
 .shoe-info-name {
   text-transform: uppercase;
   font-size: 11px;
   font-weight: 200;
 }
+
 .shoe-info-style {
   font-size: 18px;
   font-weight: 700;
 }
+
 .shoe-info-price {
   font-size: 11px;
   font-weight: 700;
@@ -178,6 +196,7 @@
   font-size: small;
   font-weight: 700;
 }
+
 .nav-buttons {
   margin: 10px;
   padding: 10px;
@@ -195,7 +214,8 @@
   flex: 1;
   justify-content: center;
   flex-direction: column;
-  padding: 30px;
+  margin: 100px 0px;
+  padding: 20px;
 }
 
 .product-seller-info {
@@ -204,18 +224,22 @@
   justify-content: flex-end;
   align-items: center;
 }
+
 .product-seller-name {
   font-weight: 600;
   margin-right: 10px;
   font-size: larger;
 }
+
 .product-seller-img {
   border: 3px solid;
 }
+
 .product-main-img {
   height: 500px;
   overflow: hidden;
 }
+
 .product-main-img img {
   height: 100%;
   width: 100%;
@@ -227,21 +251,25 @@
   display: flex;
   flex: 1;
   flex-direction: column;
-  padding: 30px;
+  padding: 20px;
   margin: 100px 0px;
 }
+
 .product-info-head {
   margin-bottom: 30px;
 }
-.product-info-paragraph{
+
+.product-info-paragraph {
   font-weight: 100;
 }
-.btn-div{
+
+.btn-div {
   display: flex;
   justify-content: center;
   margin: 30px;
 }
-.buy-btn{
+
+.buy-btn {
   height: 70px;
   width: 220px;
   background-color: black;
@@ -251,7 +279,6 @@
   font-size: large;
   border: none;
   padding: 10px;
- 
 }
 
 /* -------------------- TAGS ------------------- */
@@ -260,12 +287,14 @@
   display: flex;
   flex: 1;
 }
+
 .tag-box {
   margin-top: 10px;
   margin-right: 10px;
   padding: 10px;
   border: 3px solid;
 }
+
 .tag.text {
   text-transform: lowercase;
   font-weight: 700;

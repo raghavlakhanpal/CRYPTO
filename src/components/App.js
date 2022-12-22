@@ -61,7 +61,10 @@ const App = () => {
           <Route
             path="/products/:productId"
             element={
-              <ProductPage productData={data} getProductById={getProductById} />
+              <ProductPage
+                fetchData={fetchData}
+                getProductById={getProductById}
+              />
             }
           />
         </Routes>
