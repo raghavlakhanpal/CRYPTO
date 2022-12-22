@@ -4,7 +4,7 @@ import ShoeCard from "./ShoeCard";
 const ShoeList = ({ shoes }) => {
   return (
     <div className="shoe-list">
-      {shoes[0].map((shoe) => (
+      {shoes.map((shoe) => (
         <ShoeCard key={shoe.id} shoe={shoe} />
       ))}
     </div>
